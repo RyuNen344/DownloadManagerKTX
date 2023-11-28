@@ -3,3 +3,10 @@ plugins {
     alias(libs.plugins.com.android.library) apply false
     alias(libs.plugins.org.jetbrains.kotlin.android) apply false
 }
+
+allprojects {
+    version =
+        providers.fileContents(rootProject.layout.projectDirectory.file("version.txt")).asText.orNull?.trim()
+            ?: "snapshot"
+    group = "io.github.ryunen344.donwload.manager"
+}
