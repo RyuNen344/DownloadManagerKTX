@@ -1,4 +1,4 @@
-package io.github.ryunen344.donwload.manager.ktx.ui.theme
+package io.github.ryunen344.donwload.manager.ktx.sample.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

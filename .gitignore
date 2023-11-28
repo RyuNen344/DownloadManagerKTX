@@ -8,6 +8,8 @@
 
 *.log
 *.iml
+.idea/.gitignore
+.idea/.name
 .idea/androidTestResultsUserPreferences.xml
 .idea/compiler.xml
 .idea/git_toolbox_prj.xml
@@ -38,3 +40,6 @@ local.properties
 # ci
 artifact/
 artifact.zip
+
+# maven
+releases

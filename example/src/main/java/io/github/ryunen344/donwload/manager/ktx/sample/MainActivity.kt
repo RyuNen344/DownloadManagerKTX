@@ -1,4 +1,4 @@
-package io.github.ryunen344.donwload.manager.ktx
+package io.github.ryunen344.donwload.manager.ktx.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import io.github.ryunen344.donwload.manager.ktx.ui.theme.DonwloadManagerKTXTheme
+import io.github.ryunen344.donwload.manager.ktx.sample.ui.theme.DonwloadManagerKTXTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
