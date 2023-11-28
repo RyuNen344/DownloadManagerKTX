@@ -62,10 +62,10 @@ class SuspendDownloadManager private constructor(private val context: Context) {
     }
 
     companion object {
+        private const val OUT_OF_BOUND_COLUMN_INDEX = -1
+
         fun from(context: Context): SuspendDownloadManager {
             return SuspendDownloadManager(context.applicationContext)
         }
-
-        private const val OUT_OF_BOUND_COLUMN_INDEX = -1
     }
 }
