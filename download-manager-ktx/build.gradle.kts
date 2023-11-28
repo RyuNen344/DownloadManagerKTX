@@ -41,6 +41,13 @@ android {
     }
 }
 
+dependencies {
+    implementation(libs.core.ktx)
+    implementation(libs.kotlin.coroutines)
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.kotlin.test.coroutines)
+}
+
 publishing {
     publications {
         register<MavenPublication>("release") {
