@@ -18,6 +18,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import io.github.ryunen344.donwload.manager.ktx.SuspendDownloadManager
 import io.github.ryunen344.donwload.manager.ktx.sample.ui.theme.DonwloadManagerKTXTheme
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -47,6 +49,15 @@ class MainActivity : ComponentActivity() {
                     Button(
                         onClick = {
                             scope.launch(Dispatchers.Default) {
+                                val ids = awaitAll(
+                                    async { manager.download(request) },
+                                    async { manager.download(request) },
+                                    async { manager.download(request) },
+                                    async { manager.download(request) },
+                                )
+                                ids.forEach {
+                                    Log.d(TAG, "downloaded uri $it")
+                                }
                                 val uri = manager.download(request)
                                 Log.d(TAG, "downloaded uri $uri")
                             }
