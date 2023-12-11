@@ -12,11 +12,13 @@
 .idea/.name
 .idea/androidTestResultsUserPreferences.xml
 .idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
 .idea/git_toolbox_prj.xml
 .idea/gradle.xml
 .idea/jarRepositories.xml
 .idea/kotlinc.xml
 .idea/markdown.xml
+.idea/migrations.xml
 .idea/misc.xml
 .idea/vcs.xml
 .idea/workspace.xml
